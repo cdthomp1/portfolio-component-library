@@ -4,17 +4,23 @@ import Link from 'next/link'
 
 const Navigation = () => {
     return (
-        <div className={styles.nav}>
-            <div className={styles.logoContainer}>
-                <img src="https://cameronthompson.io/images/Dev.png" />
-                <p>Cameron<br /> Thompson</p>
-            </div>
-            <div className={styles.menuContainer}>
-                <div className={styles.menuItem}><Link href="#">Home</Link></div>
-                <div className={styles.menuItem}><Link href="#">About</Link></div>
-                <div className={styles.menuItem}><Link href="#">Projects</Link></div>
-                <div className={styles.menuItem}><Link href="#">Articles</Link></div>
-                <div className={styles.menuItem}><Link href="#">Contact</Link></div>
+        <div className="nav">
+            <div className="navbar">
+                <div className="logoContainer">
+                    <img src="/images/Dev.png" />
+                    <p>Cameron<br /> Thompson</p>
+                </div>
+                <input type="checkbox" id="navbar-toggle" />
+                <label htmlFor="navbar-toggle"><i></i></label>
+                <nav className="menu">
+                    <ul>
+                        <li className="menuItem"><a href="/">Home</a></li>
+                        <li className="menuItem"><a href="/about">About Me</a></li>
+                        <li className="menuItem"><a href="/articles">Articles</a></li>
+                        <li className="menuItem"><a href="/projects">Projects</a></li>
+                        <li className="menuItem"><a href="/contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     )

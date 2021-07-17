@@ -32,6 +32,7 @@
 
 .cardLink:hover {
     box-shadow: none;
+    transition: top 100ms ease-in-out 0ms, left 0s ease-in-out;
 }
 
 .cardLink a {
